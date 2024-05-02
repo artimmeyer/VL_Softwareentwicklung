@@ -418,7 +418,7 @@ public class Zuschauer: Person {
 
 ## Klassen in C#
 
-> Klassen [und Strukturen] sind zwei der grundlegenden Konstrukte des allgemeinen Typsystems in .NET Framework. Bei beiden handelt es sich um eine Datenstruktur, die einen als logische Einheit zusammengehörenden Satz von Daten und Verhalten kapselt.
+> Klassen [und Strukturen] sind zwei der grundlegenden Konstrukte des allgemeinen Typsystems im .NET Framework. Bei beiden handelt es sich um eine Datenstruktur, die einen als logische Einheit zusammengehörenden Satz von Daten und Verhalten kapselt.
 
                                   {{0-1}}
 ******************************************************************************
