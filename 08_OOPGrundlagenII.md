@@ -574,7 +574,7 @@ public class Program
 ******************************************************************************
 
 Felder können mit der Deklaration oder im Konstruktor  initialisiert werden.
-Desweiteren kann mit `readonly` der Wert nach dem Ende des
+Desweiteren kann mit `readonly` der Wert nach dem Ende der
 Konstruktorabarbeitung geschützt werden. Eine solche Variable kann als static
 deklariert werden, um zu vermeiden, dass eine entsprechende Zahl von Kopien
 erstellt wird.
