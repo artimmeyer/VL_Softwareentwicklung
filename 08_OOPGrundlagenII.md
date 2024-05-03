@@ -845,7 +845,7 @@ Member damit adressiert werden. An dieser Stelle wird deutlich, dass
 Initializier ggf. beim schnellen Testen Tipparbeit sparen, in realen Anwendungen
 aber nicht zum Einsatz kommen sollten.
 
-> Achtung: _The `required` modifier is available beginning with C# 11._ Der hilft uns, in Ordnung in das Konzept der Initializer zu bringen.
+> Achtung: _The `required` modifier is available beginning with C# 11._ Der hilft uns, Ordnung in das Konzept der Initializer zu bringen.
 
 ******************************************************************************
 
