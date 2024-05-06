@@ -75,7 +75,7 @@ public class Person {
 }
 
 public class Fußballspieler : Person {
-  public byte rückennumemr;
+  public byte rückennummer;
 }
 
 public class Schiedsrichter : Person {
@@ -181,9 +181,9 @@ der Vererbung steigt die Komplexität der Sichtbarkeitsregeln nochmals an.
 | `ìnternal protected` | ja             | ja             || ja            | nein           |
 ````
 
-`protected` definiert eine differenzierten Zugriff für geerbte und Instanz-Methoden. Während
+`protected` definiert einen differenzierten Zugriff für geerbte und Instanz-Methoden. Während
 bei geerbten Elementen uneingeschränkt zugegriffen werden kann, bleiben diese bei der
-bloßenn Anwendung geschützt.
+bloßen Anwendung geschützt.
 
 Die Konzepte von `internal` setzen diese Überlegung fort und kontrollieren den Zugriff über Assembly-Grenzen.
 
