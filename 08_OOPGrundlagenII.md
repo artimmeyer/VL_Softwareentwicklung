@@ -954,7 +954,7 @@ ist lesegeschützt.
 
 Zudem lassen sich mit der *Fat Arrow* Notation die Darstellungen wiederum
 verkürzen. Beispielhaft ist an folgendem Beispiel auch, dass sich die Properties
-eine vollkommen andere Informationsstruktur bedienen als die eigentlichen
+einer vollkommen anderen Informationsstruktur bedienen als die eigentlichen
 privaten Variablen abbilden (= Kapselung).
 
 ```csharp
@@ -981,7 +981,7 @@ Und wie sieht es mit dem Zugriffsschutz der Eigenschaften aus? Insbesondere
 `set` sollte soweit wie möglich eingeschränkt werden. Dafür können `internal`,
 `private` und `protected` genutzt werden.
 
-Wenn in den Eigenschaftenzugriffsmethoden keine zusätzliche Logik erforderlich ist, bietet sich die Verwendung von automatisch implementierten Eigenschaften.
+Wenn in den Eigenschaftenzugriffsmethoden keine zusätzliche Logik erforderlich ist, bietet sich die Verwendung von automatisch implementierten Eigenschaften an.
 
 ```csharp
 public int CustomerID { get; set; }
