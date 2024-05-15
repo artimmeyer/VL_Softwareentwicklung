@@ -1,4 +1,5 @@
-<!--
+**![grafik](https://github.com/TUBAF-IfI-LiaScript/VL_Softwareentwicklung/assets/148192307/eb948793-a0d5-407f-84ae-4daa0702e5a2)
+**<!--
 
 author:   Sebastian Zug, Galina Rudolf & André Dietrich
 email:    sebastian.zug@informatik.tu-freiberg.de
@@ -440,7 +441,7 @@ Um diese Situation zu vermeiden, verwenden Sie für einen der Typparameter einen
 anderen Namen.
 ```
 
-Verwenden Sie Beschränkungen, analog zu den generischen Typen, sinnvolle Einschränkungen für die Typparametern in Methoden gewährleisten. Das folgende Beispiel gibt als Beschränkung die Implementierung des Interfaces IComparable<T> an, um unseren Vergleich zu realisieren.
+Verwenden Sie Beschränkungen, analog zu den generischen Typen, welche sinnvolle Einschränkungen für die Typparametern in Methoden gewährleisten. Das folgende Beispiel gibt als Beschränkung die Implementierung des Interfaces IComparable<T> an, um unseren Vergleich zu realisieren.
 
 ```csharp      IComparable
 using System;
@@ -545,8 +546,6 @@ Wie bereits bei den generischen Methoden angedeutet können wir mittels "Beschr�
 
 
 ```csharp    initKeyword
-using System;
-
 using System;
 
 public class Program{
