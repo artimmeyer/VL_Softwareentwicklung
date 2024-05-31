@@ -495,7 +495,7 @@ style="width: 100%; display: block; margin-left: auto; margin-right: auto;"
 
 **public, private**
 
-Die Sichtbarkeitsattribute `public` und `private` sind unabhängig vom Vererbungs-, Instanzierungs- oder Paketstatus einer Klasse. Im Beispiel kannn der TrafficOperator nicht
+Die Sichtbarkeitsattribute `public` und `private` sind unabhängig vom Vererbungs-, Instanzierungs- oder Paketstatus einer Klasse. Im Beispiel kann der TrafficOperator nicht
 auf die Geschwindigkeiten der Instanzen von Car zurückgreifen.
 
 ![PublicPrivate](https://www.plantuml.com/plantuml/png/NP51pjCm48NtFiLJLd-XhNwsMRK2KR6eYbJ4Xh9mx4aonBKZUr944RVX6EnwCPoaWEZspJVVFCkR93hAS7OgTUnx7VKPnkcKjYAHgq7edGd-o5V2ishP4Wn7uqXD45xh-5q1AwIUo9QmOQWSpGd9SGoVvcmc5ddq4hi_emN-hlnGT-M7gEkQpQ6dg2NSzH-fvNmrbUF5Jvydopvupi3MkPobfyMeU5X6yQh0YzKAnNEvNgF884eKJIIk1TS1UgWBfNmGWeGUeSQCJ6MXNSBx6B9ClYrFliz5sQ0XmPwa3PQMo6daYnP2-XV_9toiLEADJZXKNwWJTDhxiGGiKtRjA9dsAtlBJKSib6VEKSHRtSOh3GsTV6uTRxzCDxs1_1A92RhAa6VJ2YuKRp-zfUZNQaFUvg_z3G00 "Private member [PublicPrivate.plantUML](https://github.com/liaScript/CsharpCourse/blob/master/code/10_UML/Graphs/publicPrivate.plantUML)")
@@ -536,8 +536,7 @@ definierbar:
 [Sichtbarkeit] [/] Name [: Typ] [ Multiplizität ] [= Vorgabewert] [{Eigenschaftswert}]
 ```
 
-+ *Sichtbarkeit* ... vgl. vorheriger Absatz
-    Das "/" bedeutet, dass es sich um ein abgeleitetes Attribut handelt.
++ *Sichtbarkeit* ... vgl. vorheriger Absatz. Das "/" bedeutet, dass es sich um ein abgeleitetes Attribut handelt.
 + *Name* ... des Attributes, Leer und Sonderzeichen sollten weggelassen werden, um zu vermeiden, dass Sie bei der Implementierung Probleme generieren.
 
 + *Typ* ... UML verwendet zwar einige vordefinierte Typen (Integer, Real, String, Boolean, UnlimitedNatural) beinhaltet aber keine Einschränkungen zu deren Wertebereich!
@@ -560,7 +559,7 @@ definierbar:
 | ----------- | ----------------------------------------------------------------------------- |
 | `readOnly`  | unveränderlicher Wert                                                         |
 | `subsets`   | definiert die zugelassen Belegung als Untermenge eines anderen Attributs      |
-| `redefines` | überschreiben eines ererbten Attributes                                       |
+| `redefines` | Überschreiben eines ererbten Attributes                                       |
 | `ordered`   | Inhaltes eines Attributes treten in geordneter Reihenfolge ohne Dublikate auf |
 | `bag`       | Attribute dürfen ungeordnet und mit Dublikaten versehen enthalten sein        |
 | `sequence`  | legt fest, dass der Inhalt sortiert, aber ohne Dublikate ist                  |
@@ -693,8 +692,8 @@ interface Sortierliste{
 
 class Datenbank : SortierteListe
 {
-  void einfuegen (Eintrag e) {//Implementierung};
-  void loeschen (Eintrag e) {//Implementierung};
+  void einfuegen (Eintrag e) //{Implementierung};
+  void loeschen (Eintrag e) //{Implementierung};
 }
 ```
 
@@ -710,7 +709,7 @@ Die Möglichkeiten der Verknüpfung zwischen Klassen und Interfaces lassen sich 
 
 ## UML- Metamodell
 
-Abstraktionseben der UML-Modellierung:
+Abstraktionsebenen der UML-Modellierung:
 
 + M0 - Instanzebene: repräsentiert die konkrete Ausführung des Systems und ist nicht direkt in der UML-Modellierung abgebildet, auf dieser Ebene befinden sich die tatsächlichen Instanzen von Objekten, die während der Laufzeit eines Systems existieren. 
 
