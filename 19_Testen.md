@@ -56,10 +56,9 @@ Entsprechend brauchen wir ein Tool, mit dem wir die Abhängigkeiten UND den eige
 Ein `NuGet`-Paket ist eine gepackte Datei mit der Erweiterung `.nupkg` die:
 
 + den kompilierten Code (DLLs),
-+ ein beschreibendes Manifest, in dem Informationen wie die Versionsnummer des Pakets, ggf. der Speicherort des Source Codes oder die Projektwebseite enthalten sind sowie
++ ein beschreibendes Manifest, in dem Informationen wie die Versionsnummer des Pakets, ggf. der Speicherort des Source Codes oder die Projektwebseite
 + die Abhängigkeiten von anderen Paketen und dessen Versionen
-enthalten sind
-Ein Entwickler, der seinen Code veröffentlichen möchte generiert die zugehörige Struktur und läd diese auf einen `NuGet` Server. Unter dem [Link](https://www.nuget.org/) kann dieser durchsucht werden.
+enthält. Ein Entwickler, der seinen Code veröffentlichen möchte generiert die zugehörige Struktur und läd diese auf einen `NuGet` Server. Unter dem [Link](https://www.nuget.org/) kann dieser durchsucht werden.
 
 **Anwendungsbeispiel: Symbolisches Lösen von Mathematischen Gleichungen**
 
@@ -266,7 +265,7 @@ style="width: 100%; max-width: 560px; display: block; margin-left: auto; margin-
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Modultest, Komponententest oder Unittest   | Funktionalität innerhalb einzelner abgrenzbarer Teile der Software (Module, Programme oder Unterprogramme, Units oder Klassen) | häufig durch den Softwareentwickler selbst, Nachweis der technischen Lauffähigkeit und korrekter fachlicher (Teil-) Ergebnisse                            |
 | Integrationstest, Interaktionstest         | Zusammenarbeit voneinander abhängiger Komponenten                                                                              | Testschwerpunkt liegt auf den Schnittstellen der beteiligten Komponenten und soll korrekte Ergebnisse über komplette Abläufe hinweg nachweisen            |
-| Systemtest                                 | Gesamtes System wird gegen die gesamten Anforderungen (funktionale und nicht-funktionale Anforderungen) getestet               | Test in einer Testumgebung statt / wird mit Testdaten  durchgeführt - Simulation einer realistischen Umgebung                                             |
+| Systemtest                                 | Gesamtes System wird gegen die gesamten Anforderungen (funktionale und nicht-funktionale Anforderungen) getestet               | Test findet in einer Testumgebung statt / wird mit Testdaten  durchgeführt - Simulation einer realistischen Umgebung                                             |
 | Abnahmetest, Verfahrenstest, Akzeptanztest | Testen der gelieferten Software durch den Kunden                                                                               | Rechtlich bindende Evaluation der Software und deren Bezahlung, unter Umständen bereits auf der Produktionsumgebung mit Kopien aus Echtdaten durchgeführt |
 
 *******************************************************************************
@@ -290,7 +289,7 @@ Es gibt unterschiedliche Definitionen für den Softwaretest:
 
 > „the process of operating a system or component under specified conditions, observing or recording the results and making an evaluation of some aspects of the system or component.“ [ANSI/IEEE Std. 610.12-1990 ]
 
-> „Test […] der überprüfbare und jederzeit wiederholbare Nachweis der Korrektheit eines Softwarebausteines relativ zu vorher festgelegten Anforderungen“ ist. [^Denert]
+> „Test […] der überprüfbarer und jederzeit wiederholbarer grßsster der Korrektheit eines Softwarebausteines relativ zu vorher festgelegten Anforderungen“ ist. [^Denert]
 
 > "Unter Testen versteht man den Prozess des Planens, der Vorbereitung und der Messung, mit dem Ziel, die Eigenschaften eines IT-Systems festzustellen und den Unterschied zwischen dem tatsächlichen und dem erforderlichen Zustand aufzuzeigen. [^Pol]
 
@@ -422,7 +421,7 @@ Nehmen wir an, wir hätten eine Klasse MyMathFunctions mit zwei Methoden impleme
 static class MyMathFunctions{
   //Fakultät der Zahl i
   public static int fak(int i) {...}
-  // Grösstergemeinsamer Teiler von i, j und k
+  // Grösster gemeinsamer Teiler von i, j und k
   public static int ggt(int i, int j, int k) {...}
 }
 ```
@@ -487,7 +486,7 @@ anhand differenzierter Metriken erfolgen:
 
 Anweisungsüberdeckung (auch $C_0$-Test genannt) zerlegt das Programm statisch in
 seine Anweisungen und bestimmt den Anteil der in den Testfällen berücksichtigten
-Anweisungen. Üblich ist eine Prüfung von 95%-100% aller Anweisungen durch als
+Anweisungen. Üblich ist eine Prüfung von 95%-100% aller Anweisungen als
 $C_0$-Kriterium anzustreben:
 
 $$
@@ -571,7 +570,7 @@ Mit dem Testfall $i = 1$ ergibt sich eine $C_1$-Abdeckung von $0.5$.
 
 Das $C_1$ Kriterium berücksichtigt keine Schleifen im zu untersuchenden Code.
 Der "Pfad" beschreibt gegenüber dem "Zweig" aber eben auch die mehrfache
-Ausführung ein und des selben Zweiges. Diese Untersuchung muss entsprechend
+Ausführung ein und desselben Zweiges. Diese Untersuchung muss entsprechend
 Schleifen in variabler Durchlaufzahl umsetzten.
 
 **C_3 Bedingungsüberdeckungstest**
