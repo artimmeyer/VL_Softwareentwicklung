@@ -154,7 +154,7 @@ Wie war das noch mal, welche Elemente (Member) zeichnen einen Klasse unter C# au
 ## Motivation und Idee der Events
 
 Was haben wir mit den Delegaten erreicht? Wir sind in der Lage aus einer Klasse,
-auf Methoden (einer anderer Klassen) zurückzugreifen, über die wir per Referenz
+auf Methoden (einer anderen Klasse) zurückzugreifen, über die wir per Referenz
 informiert wurden. Die aufgerufene Methode wird der aufrufenden Klasse über
 einen Delegaten bekannt gegeben. Es erfolgt eine Typprüfung der Parameter.
 
@@ -198,7 +198,7 @@ Im einfachsten Fall lässt sich das Event-Konzept folgendermaßen anwenden:
 public delegate void varAChangedHandler();
 
 // Schritt 2
-// Wir integrieren ein event in unser Publisher Klasse, dass den Delegaten
+// Wir integrieren ein Event in unser Publisher Klasse, dass den Delegaten
 // abbildet
 public class Publisher{
   public event varAChangedHandler OnAChangedHandler;
@@ -268,7 +268,7 @@ public event VarAChangedHandler AChanged
 }
 ```
 
-2. Der Compiler sucht innerhalb der Publisher Klasse nach Referenzen, die auf AChanged und lenkt diese auf das private Delegate um.
+2. Der Compiler sucht innerhalb der Publisher Klasse nach Referenzen, die auf AChanged zeigen und lenkt diese auf das private Delegate um.
 3. Der Compiler mappt alle += Operationen außerhalb auf die Zugriffsmethoden add and remove.
 
 ********************************************************************************
@@ -475,7 +475,7 @@ void EventHandler(object sender, PriceChangedEventArgs e)
 ```
 
 Um diese Anpassungen beim Datentyp zu realisieren existiert bereits eine
-generischen Form von EventHandler mit der Signatur
+generische Form von EventHandler mit der Signatur
 
 ```csharp
 public delegate void EventHandler<TEventArgs>(object source,
